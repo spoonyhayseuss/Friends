@@ -9,7 +9,7 @@ import com.robotium.solo.Solo;
 public class i_friends_f_z_logOut extends ActivityInstrumentationTestCase2 {
     private Solo solo;
 
-    private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "com.fitbit.onboarding.landing.LandingActivity_";
+    private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "com.fitbit.onboarding.landing.LandingActivity";
 
     private static Class<?> launcherActivityClass;
     static{
@@ -48,7 +48,7 @@ public class i_friends_f_z_logOut extends ActivityInstrumentationTestCase2 {
         solo.clickOnText(java.util.regex.Pattern.quote("Log Out"));
 
 
-        assertTrue("LandingActivity_ is not found!", solo.waitForActivity("LandingActivity_"));
+        assertTrue("LandingActivity is not found!", solo.waitForActivity("LandingActivity"));
 
         solo.sleep(500);
 
