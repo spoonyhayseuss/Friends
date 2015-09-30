@@ -50,6 +50,10 @@ public class i_friends_c_b_friends7dayShowInactive extends ActivityInstrumentati
         solo.sleep(500);
 
         solo.clickOnText("7 DAY STEPS");
+        solo.sleep(500);
+
+        android.widget.ListView listView0 = (android.widget.ListView) solo.getView(android.widget.ListView.class, 1);
+        solo.scrollListToLine(listView0, 50);
         solo.clickOnText("Show Inactive Friends");
         solo.clickOnText("Unranked");
 

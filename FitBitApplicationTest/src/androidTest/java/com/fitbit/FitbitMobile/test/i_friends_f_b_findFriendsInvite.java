@@ -53,11 +53,13 @@ public class i_friends_f_b_findFriendsInvite extends ActivityInstrumentationTest
         solo.clickOnView(solo.getView("find_friends_button"));
         //solo.waitForActivity("AddFriendsActivity_", 500);
 
-        solo.clickOnView(solo.getView("invite_by_email_layout"));
+        solo.clickOnText(java.util.regex.Pattern.quote("Email"));
+
 
         solo.clearEditText(0);
         solo.enterText(0, "theFriend@android.com");
-        solo.clickOnView(solo.getView("btn_invite"));
+
+        solo.clickOnView(solo.getView("add_friend_button"));
         solo.sleep(2000);
 
     }

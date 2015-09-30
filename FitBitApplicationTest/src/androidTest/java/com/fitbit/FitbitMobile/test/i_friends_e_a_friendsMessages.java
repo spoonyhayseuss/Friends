@@ -50,7 +50,7 @@ public class i_friends_e_a_friendsMessages extends ActivityInstrumentationTestCa
         solo.sleep(500);
 
         solo.clickOnText("MESSAGES");
-        solo.clickOnText("Nancy cheered you");
+        solo.clickOnText("theFriended cheered you");
 
 
 

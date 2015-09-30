@@ -50,6 +50,8 @@ public class i_friends_d_h_viewFriendBadgesDailyStep extends ActivityInstrumenta
         solo.sleep(500);
 
         solo.clickOnText("7 DAY STEPS");
+        android.widget.ListView listView0 = (android.widget.ListView) solo.getView(android.widget.ListView.class, 1);
+        solo.scrollListToLine(listView0, 50);
         solo.clickOnText("Show Inactive Friends");
         solo.clickOnText("Aaron W.");
         solo.sleep(500);

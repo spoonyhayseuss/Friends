@@ -55,6 +55,8 @@ public class i_friends_f_e_findFriendsSearch extends ActivityInstrumentationTest
         solo.clickOnView(solo.getView("search"));
 
         solo.enterText(0, "theFriend");
+
+        solo.sleep(1000);
         solo.clickOnText("theFriend");
 
         solo.sleep(500);

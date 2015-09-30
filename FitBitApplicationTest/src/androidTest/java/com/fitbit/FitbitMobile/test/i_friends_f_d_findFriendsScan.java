@@ -52,15 +52,13 @@ public class i_friends_f_d_findFriendsScan extends ActivityInstrumentationTestCa
         solo.clickOnText("7 DAY STEPS");
         solo.clickOnView(solo.getView("find_friends_button"));
 
-        solo.clickOnView(solo.getView("scan_contacts_layout"));
-
         solo.sleep(500);
+
+        solo.clickOnText(java.util.regex.Pattern.quote("Contacts"));
 
         solo.clickOnText("Show Inactive Friends");
 
-        solo.clickOnView(solo.getView("btn_invite", 2));
 
-        solo.sleep(1000);
 
 
 

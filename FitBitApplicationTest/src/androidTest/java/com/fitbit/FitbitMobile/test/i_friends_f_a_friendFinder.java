@@ -6,7 +6,7 @@ import com.robotium.solo.Solo;
 
 
 @SuppressWarnings("rawtypes")
-public class i_friends_f_a_findFriends extends ActivityInstrumentationTestCase2 {
+public class i_friends_f_a_friendFinder extends ActivityInstrumentationTestCase2 {
     private Solo solo;
 
     private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "com.fitbit.onboarding.landing.LandingActivity";
@@ -21,7 +21,7 @@ public class i_friends_f_a_findFriends extends ActivityInstrumentationTestCase2 
     }
 
     @SuppressWarnings("unchecked")
-    public i_friends_f_a_findFriends() throws ClassNotFoundException {
+    public i_friends_f_a_friendFinder() throws ClassNotFoundException {
         super(launcherActivityClass);
     }
 
@@ -53,8 +53,22 @@ public class i_friends_f_a_findFriends extends ActivityInstrumentationTestCase2 
         solo.clickOnView(solo.getView("find_friends_button"));
         solo.waitForActivity("AddFriendsActivity_", 500);
 
-        solo.clickOnText("Find Friends");
-        solo.clickOnText("contact your friends");
+        solo.clickOnText(java.util.regex.Pattern.quote("Contacts"));
+        solo.sleep(500);
+        solo.clickOnText(java.util.regex.Pattern.quote("Facebook"));
+        solo.sleep(500);
+        solo.clickOnText(java.util.regex.Pattern.quote("Email"));
+        solo.sleep(500);
+        solo.scrollToSide(solo.LEFT);
+        solo.sleep(500);
+        solo.scrollToSide(solo.LEFT);
+        solo.sleep(500);
+        solo.clickOnView(solo.getView("search"));
+        solo.goBack();
+        solo.goBack();
+        solo.clickOnView(solo.getView(android.widget.ImageButton.class, 1));
+
+        
 
 
 

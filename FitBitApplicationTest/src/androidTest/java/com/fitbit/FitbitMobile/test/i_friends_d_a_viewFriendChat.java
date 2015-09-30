@@ -53,7 +53,8 @@ public class i_friends_d_a_viewFriendChat extends ActivityInstrumentationTestCas
 
         solo.scrollToSide(solo.LEFT);
         solo.sleep(500);
-
+        android.widget.ListView listView0 = (android.widget.ListView) solo.getView(android.widget.ListView.class, 1);
+        solo.scrollListToLine(listView0, 50);
         solo.clickOnText("Show Inactive Friends");
         solo.clickOnText("Aaron W.");
         solo.sleep(500);
